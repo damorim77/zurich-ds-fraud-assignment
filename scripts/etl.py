@@ -18,7 +18,7 @@ def raw_to_landing():
     df['deductibleType'] = df['deductibleType'].astype(str)
 
   if os.path.exists(LANDING_PATH):
-    print("Landing path already exists. Will be overwrited")
+    print("Landing path already exists. Will be overwritten")
     shutil.rmtree(LANDING_PATH)
   
   print("Creating landing path")
